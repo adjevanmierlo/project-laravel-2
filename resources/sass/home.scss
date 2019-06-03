@@ -1,0 +1,287 @@
+// Variables
+@import 'variables';
+
+.landing {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    text-align: center;
+
+    mark {
+        background-color: transparent;
+        color: $main-color;
+    }
+}
+
+
+.mark {
+    background-color: transparent;
+    color: $main-color;
+}
+
+#section1 {
+    .landing {
+        z-index: 1;
+        color: $second-font-color;
+    }
+}
+
+.btn-outline-primary {
+    border-color: $main-color;
+    color: $second-font-color;
+    transition: all ease 0.8s;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.375em;
+    font-weight: 400;
+}
+
+.btn-outline-primary:hover {
+    box-shadow: inset 150px 0 0 0 $main-color;
+    background-color: transparent;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $bg-color;
+}
+
+//media queries
+@media (max-width: 360px) {
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    a.nav-link {
+        font-size: 20px !important;
+    }
+}
+
+#section2 {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: $bg-color-2;
+
+    .container-fluid {
+        text-align: center;
+        padding-top: 150px;
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+
+            .col {
+                color: $main-font-color;
+                padding: 50px;
+            }
+        }
+    }
+}
+
+.rounded-circle {
+    border: solid 8px $second-font-color;
+    width: 25%;
+    height: auto;
+    box-shadow: 0px 0px 15px $bg-color;
+}
+
+.about-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+@media (max-width: 360px) {
+    #section2 {
+        .container-fluid {
+            padding-top: 50px;
+        }
+    }
+
+    .about-service {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .rounded-circle {
+        width: 100%;
+    }
+
+    .about-text p {
+        padding-top: 50px;
+    }
+}
+
+#section3 {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 100%;
+    background-color: $bg-color-2;
+    padding-top: 150px;
+    .row{
+        margin: 0;
+    }
+}
+
+    iframe {
+        margin: 0;
+        width: 50vw;
+        height: 100vh;
+        pointer-events: none;
+    }
+
+    .google-blok{
+        padding: 0;
+    }
+
+    .google-blok p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .google-blok a {
+        color: $main-font-color;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .google-overlay {
+        position: absolute;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+        pointer-events: none;
+    }
+
+        .google-contact-tekst {
+            z-index: 1;
+            position: absolute;
+            top: 15%;
+            left: 15%;
+        }
+
+        .google-contact-vlag {
+            position: absolute;
+            top: 36.2%;
+            left: 36.5%;
+        }
+
+        .google-contact-icons {
+            position: absolute;
+            top: 44%;
+            left: 15%;
+        }
+
+
+.info-blok a {
+    color: $second-font-color;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.info-blok a:hover {
+    color: $main-color;
+}
+
+.info-blok p {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.info-blok h1 {
+    font-size: 76px;
+    line-height: 80px;
+}
+
+.info-blok h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 5%;
+}
+
+
+.info-blok {
+    background-color: $bg-color;
+    color: $second-font-color;
+    padding: 0;
+
+
+
+    input {
+        border-color: $main-color !important;
+        background-color: transparent !important;
+        color: $second-font-color !important;
+
+    }
+}
+
+textarea {
+    border-color: $main-color !important;
+    background-color: transparent !important;
+    color: $second-font-color !important;
+}
+
+.text {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+@media (max-width: 360px) {
+    .row {
+        margin: 0;
+    }
+
+    .col-sm-6 {
+        padding: 0;
+    }
+
+    #section3 {
+        position: absolute;
+        top: 366%;
+        background-color: white;
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    #section3 {
+        .google-overlay {
+            width: 100%;
+            height: 100vh;
+
+            .google-contact-vlag {
+                top: 43.8%;
+                left: 48.5%;
+            }
+
+            .google-contact-icons {
+                top: 50%;
+            }
+        }
+    }
+}

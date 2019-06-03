@@ -1,0 +1,72 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    font-family: Raleway;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.05em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.375em;
+    font-weight: 400;
+}
+
+.active a {
+    color: $main-color !important;
+font-weight: 400;
+}
+
+.navbar {
+    background-color: transparent !important;
+    z-index: 1;
+
+    .navbar-nav {
+        .nav-link {
+            font-size: 30px;
+            color: $second-font-color;
+        }
+    }
+}
+
+.nav-link:hover {
+    color: $second-font-color !important;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    right: 0;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #4f9f2d, #4c9c2f, #93cd26);
+    border-image-slice: 1;
+    transition: width 0.5s ease 0s, right 0.5s ease 0s;
+    width: 0;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
