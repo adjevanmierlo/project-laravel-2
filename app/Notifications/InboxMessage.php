@@ -2,31 +2,15 @@
 
 namespace App\Notifications;
 
-use App\Http\Requests\ContactFormRequest;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use App\Http\Requests\ContactFormRequest;
+
 
 class InboxMessage extends Notification
 {
-    protected $message;
-    public function __construct(contactFormRequest $message)
-    {
-        $this->message = $message;
-    }
-
-    public function toMail($notifiable)
-    {
-        return (new MailMessage)
-                    ->subject(config('admin.name') . ", you got a new message!")
-                    ->greeting(" ")
-                    ->salutation(" ")
-                    ->from($this->message->email, $this->message->name)
-					->line($this->message->message);
-    }
-
-
     use Queueable;
 
     /**
@@ -34,9 +18,10 @@ class InboxMessage extends Notification
      *
      * @return void
      */
-    public function __construct()
+    protected $message;
+    public function __construct(contactFormRequest $message)
     {
-        //
+        $this->message = $message;
     }
 
     /**
@@ -59,9 +44,11 @@ class InboxMessage extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+        ->subject(config('admin.name') . ", you got a new message!")
+        ->greeting(" ")
+        ->salutation(" ")
+        ->from($this->message->email, $this->message->name)
+        ->line($this->message->message);
     }
 
     /**
@@ -76,7 +63,4 @@ class InboxMessage extends Notification
             //
         ];
     }
-
-
 }
-
