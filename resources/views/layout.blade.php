@@ -20,7 +20,12 @@
 
    <div id="section3">
         @include('content-contact-page')
+        @include('footer')
    </div>
+
+   {{-- <div id="section4">
+     @include('footer')
+  </div> --}}
 
 
 </div>

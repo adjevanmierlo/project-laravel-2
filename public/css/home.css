@@ -65,12 +65,10 @@ canvas {
   width: 100%;
   position: absolute;
   top: 100%;
-  background-color: white;
 }
 
 #section2 .container-fluid {
   text-align: center;
-  padding-top: 150px;
 }
 
 #section2 .container-fluid .container {
@@ -83,6 +81,10 @@ canvas {
 #section2 .container-fluid .container .col {
   color: #000000;
   padding: 50px;
+}
+
+#section2 h1 {
+  padding-top: 100px;
 }
 
 .rounded-circle {
@@ -123,8 +125,6 @@ canvas {
   top: 200%;
   left: 0;
   width: 100%;
-  background-color: white;
-  padding-top: 150px;
 }
 
 #section3 .row {
@@ -172,7 +172,7 @@ iframe {
 
 .google-contact-vlag {
   position: absolute;
-  top: 36.2%;
+  top: 36%;
   left: 36.5%;
 }
 
@@ -269,5 +269,29 @@ textarea {
   #section3 .google-overlay .google-contact-icons {
     top: 50%;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to left, #2C2C2C, 50%, white 50%);
+}
+
+footer span {
+  padding-left: 2px;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+.fab {
+  font-size: 46px;
+  color: #2C2C2C;
+}
+
+.fab:hover {
+  color: #4f9f2d;
 }
 

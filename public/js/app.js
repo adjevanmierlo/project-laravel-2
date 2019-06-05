@@ -32125,24 +32125,26 @@ module.exports = g;
 //    _.throttle(doThatStuff, 100);
 // });
 // Only not doing it here to keep this Pen dependency-free.
-window.addEventListener("scroll", function (event) {
-  var fromTop = window.scrollY;
-  mainNavLinks.forEach(function (link) {
-    var section = document.querySelector(link.hash);
+// window.addEventListener("scroll", event => {
+//   let fromTop = window.scrollY;
+//   mainNavLinks.forEach(link => {
+//     let section = document.querySelector(link.hash);
+//     if (
+//       section.offsetTop <= fromTop &&
+//       section.offsetTop + section.offsetHeight > fromTop
+//     ) {
+//       link.classList.add("current");
+//     } else {
+//       link.classList.remove("current");
+//     }
+//   });
+// });
 
-    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-      link.classList.add("current");
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -32293,17 +32295,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/about.scss":
-/*!***********************************!*\
-  !*** ./resources/sass/about.scss ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/laravel/project-3/resources/sass/about.scss'\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/webpack/lib/NormalModule.js:302:20\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)");
-
-/***/ }),
-
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -32312,17 +32303,6 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/sass/contact.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/contact.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/laravel/project-3/resources/sass/contact.scss'\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/webpack/lib/NormalModule.js:302:20\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)");
 
 /***/ }),
 
@@ -32337,30 +32317,16 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 
 /***/ }),
 
-/***/ "./resources/sass/work.scss":
-/*!**********************************!*\
-  !*** ./resources/sass/work.scss ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/laravel/project-3/resources/sass/work.scss'\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/webpack/lib/NormalModule.js:302:20\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /Applications/MAMP/htdocs/laravel/project-3/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)");
-
-/***/ }),
-
 /***/ 0:
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/home.scss ./resources/sass/about.scss ./resources/sass/contact.scss ./resources/sass/work.scss ***!
-  \*****************************************************************************************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/home.scss ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/sass/home.scss */"./resources/sass/home.scss");
-__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/sass/about.scss */"./resources/sass/about.scss");
-__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/sass/contact.scss */"./resources/sass/contact.scss");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/sass/work.scss */"./resources/sass/work.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-2/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-2/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-2/resources/sass/home.scss */"./resources/sass/home.scss");
 
 
 /***/ })

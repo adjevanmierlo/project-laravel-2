@@ -199,7 +199,7 @@ tick();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-3/resources/js/canvas.js */"./resources/js/canvas.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/laravel/project-2/resources/js/canvas.js */"./resources/js/canvas.js");
 
 
 /***/ })
